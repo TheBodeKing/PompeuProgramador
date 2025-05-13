@@ -1,0 +1,27 @@
+.sobre-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 80%;
+    min-height: var(--minHeightPadrao);
+    padding: var(--paddingPadrao);
+}
+
+.sobre-flex > * {
+    padding: clamp(10px, 1vw, 20px) clamp(10px, 2vh, 20px);
+    color: white;
+}
+
+.sobre-flex h2 {
+    font-family: var(--fonteTitulo);
+    font-size: var(--tamanhoTituloH2);
+    margin-bottom: var(--distTitulo-Body);
+}
+
+.sobre-flex p {
+    font-size: var(--tamanhoP);
+    font-family: var(--fonteP);
+    color: var(--corGold);
+}

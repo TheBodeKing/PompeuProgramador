@@ -1,0 +1,152 @@
+@media (max-width: 768px) {
+  /*cabeçalho*/
+  .navbar button {
+    display: flex;
+    margin-right: 0.8rem;
+  }
+
+  .vazio-b,
+  .vazio-a {
+    display: none;
+  }
+
+  .cabecalho {
+    justify-content: space-between;
+  }
+
+  .navbar ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 20;
+  }
+
+  .navbar ul.show {
+    display: flex;
+  }
+
+  .navbar ul li {
+    margin-bottom: 5px;
+    margin-left: 5px;
+  }
+
+  .navbar ul li:hover {
+    transform: scale(1.01);
+    background-color: rgb(38, 41, 41);
+  }
+  /*home*/
+  .home-flex {
+    flex-direction: column-reverse;
+  }
+
+  .home-foto {
+    margin-left: 0;
+  }
+
+  .home-foto img {
+    width: 70vw;
+    aspect-ratio: 3 / 4.5;
+    height: auto;
+  }
+
+  .apresentacao h1 {
+    font-size: 9vw;
+    animation: none;
+    opacity: 1;
+    color: white;
+    -webkit-text-stroke: 0;
+    margin-top: 0;
+  }
+
+  .apresentacao p {
+    margin-top: 6vh;
+    font-size: 6vw;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  /*portifólio*/
+  .portifolio-conteudo {
+    flex-direction: column;
+  }
+
+  .portifolio-conteudo p {
+    width: 100%;
+  }
+
+  .carrosel {
+    width: 100%;
+  }
+
+  .carrosel-item img {
+    width: 100%;
+    aspect-ratio: 7 / 4;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .carrosel-titulo {
+    display: flex;
+    position: relative;
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0, 0.4);
+    margin-top: 0;
+  }
+
+  .carrosel-titulo h3 {
+    padding: 0.2vh 0.6vw;
+    font-size: 0.9rem;
+  }
+
+  .portifolio-flex h2 {
+    font-size: 7vw;
+  }
+
+  .portifolio-conteudo p {
+    font-size: 5vw;
+    line-height: 1.1rem;
+  }
+  /*sobre*/
+  .sobre-flex {
+    width: 100%;
+    padding: 30px;
+  }
+
+  .sobre-flex > * {
+    padding: clamp(5px, 1vw, 10px) clamp(5px, 2vh, 10px);
+}
+
+  .sobre-flex h2 {
+    font-size: 7vw;
+  }
+
+  .sobre-flex p {
+    font-size: 5vw;
+    line-height: 1.1rem;
+  }
+  /*contato*/
+  .contato-flex{
+    width: 100%;
+    padding: 30px;
+  }
+  .contato-flex > h2 {
+    font-size: 7vw;
+  }
+
+  .contato-flex > p {
+    font-size: 5vw;
+    line-height: 1.1rem;
+  }
+
+  .contato-info p {
+    font-size: 5vw;
+  }
+
+  .contato-info p:active img {
+    transform: scale(1.1);
+  }
+}

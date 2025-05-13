@@ -1,0 +1,48 @@
+@keyframes piscarPosicao {
+  0% {
+    transform: translateY(50px);
+    opacity: 1;
+  }
+  30% {
+    transform: translateY(50px);
+    opacity: 1;
+  }
+  31% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  40% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  41% {
+    transform: translateY(-50px);
+    opacity: 1;
+  }
+  70% {
+    transform: translateY(-50px);
+    opacity: 1;
+  }
+  71% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  80% {
+    transform: translateY(0);
+    opacity: 0;
+    color: transparent;
+    -webkit-text-stroke: 1.5px var(--corGold);
+  }
+  81% {
+    transform: translateY(0);
+    opacity: 1;
+    color: white;
+    -webkit-text-stroke: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+    color: white;
+    -webkit-text-stroke: 0;
+  }
+}
