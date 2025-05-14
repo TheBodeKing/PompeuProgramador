@@ -34,6 +34,10 @@
   text-align: justify;
 }
 
+.descricao {
+  display: none;
+}
+
 .carrosel {
   width: fit-content;
   display: flex;
