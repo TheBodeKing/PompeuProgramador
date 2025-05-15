@@ -1,3 +1,5 @@
+console.log("tradutor.js carregado!");
+
 const traducoes = {
   en: {
     navHome: "Home",
@@ -71,9 +73,22 @@ function tradutor(trad) {
 }
 
 let currentLang;
+let userLang = navigator.language || navigator.userLanguage;
+
+userLang = userLang.startsWith("pt") ? "pt" : "en";
+
+
+tradutor(userLang);
+currentLang = userLang;
+const toggleBtn = document.querySelector(".pt-en");
+
+toggleBtn.textContent = currentLang === "en" ? "🌐 PT" : "🌐 EN";
+
+
 
 document.querySelector(".pt-en").addEventListener("click", () => {
   currentLang = currentLang === "en" ? "pt" : "en";
   tradutor(currentLang);
   toggleBtn.textContent = currentLang === "en" ? "🌐 PT" : "🌐 EN";
 });
+
