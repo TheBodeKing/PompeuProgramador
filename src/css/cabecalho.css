@@ -56,8 +56,16 @@
   background-color: rgb(38, 41, 41);
 }
 
-.navbar button {
+.navbar .menu {
   display: none;
+  align-self: center;
+  font-size: 1.1rem;
+  cursor: pointer;
+  max-width: fit-content;
+  height: fit-content;
+}
+
+.pt_en {
   align-self: center;
   font-size: 1.1rem;
   cursor: pointer;
