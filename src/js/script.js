@@ -1,3 +1,4 @@
+
 /*aqui eu defino as variáveis*/
 /*eu uso const e escolho um nome q eu vá tanto lembrar quanto enteder o q significa para a variavel, 
 ent eu puxo a classe do html q a variavel vai segurar. document vai puxar no documento atual, como eu carreguei 
@@ -37,10 +38,11 @@ paginas.forEach((pagina) => {
     descricao.forEach((desc) => desc.classList.remove("ativo"));
     paginas.forEach((p) => p.classList.remove("ativo"));
     itens[index].classList.add("ativo");
-    descricao[index].classList.add("ativo");
+    
 
     paginas.forEach((p) => p.classList.remove("ativo"));
     pagina.classList.add("ativo");
+    descricao[index].classList.add("ativo");
 
     indexAtual = index;
   });
@@ -50,18 +52,22 @@ btnAnte.addEventListener("click", () => {
   indexAtual = (indexAtual - 1 + itens.length) % itens.length;
 
   itens.forEach((item) => item.classList.remove("ativo"));
+  descricao.forEach((desc) => desc.classList.remove("ativo"));
   itens[indexAtual].classList.add("ativo");
 
   paginas.forEach((p) => p.classList.remove("ativo"));
   paginas[indexAtual].classList.add("ativo");
+   descricao[indexAtual].classList.add("ativo");
 });
 
 btnProx.addEventListener("click", () => {
   indexAtual = (indexAtual + 1 + itens.length) % itens.length;
 
   itens.forEach((item) => item.classList.remove("ativo"));
+  descricao.forEach((desc) => desc.classList.remove("ativo"));
   itens[indexAtual].classList.add("ativo");
 
   paginas.forEach((p) => p.classList.remove("ativo"));
   paginas[indexAtual].classList.add("ativo");
+  descricao[indexAtual].classList.add("ativo");
 });

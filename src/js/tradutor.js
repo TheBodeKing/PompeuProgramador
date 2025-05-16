@@ -1,5 +1,3 @@
-console.log("tradutor.js carregado!");
-
 const traducoes = {
   en: {
     navHome: "Home",

@@ -1,12 +1,23 @@
 @media (max-width: 768px) {
   /*cabeçalho*/
-  .navbar button {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .navbar .menu {
     display: flex;
-    margin-right: 0.8rem;
+    position: absolute;
+    right: 30px;
   }
 
+.pt-en {
+    display: none; /* hidden until menu is opened */
+  }
+  
   .vazio-b,
-  .vazio-a {
+  .vazio-a,
+  #btnTlr2 {
     display: none;
   }
 
@@ -26,6 +37,11 @@
 
   .navbar ul.show {
     display: flex;
+  }
+
+  .navbar ul.show ~ .pt-en {
+    display: inline-block;
+    margin: 10px 0 0 10px;
   }
 
   .navbar ul li {

@@ -38,7 +38,6 @@
     <link rel="stylesheet" href="./src/css/responsivo.css" />
     <!--Puxando o javascript. O defer diz pra carregar no final, dps q tudo tiver sido carregado antes. 
     Serve para carregar mais rapido a página, e eu tenho a superstição de que as variáveis não funcionarão se eu n fizer isso-->
-    <script src="./src/js/teste.js" defer></script>
     <script src="./src/js/script.js" defer></script>
     <script src="./src/js/tradutor.js" defer></script>
   </head>
@@ -59,12 +58,13 @@
           </li>
           <li><a href="#sobre" data-i18n="navSobre">Sobre</a></li>
           <li><a href="#contato" data-i18n="navContato">Contato</a></li>
+         
         </ul>
-        
+          <button id="btnTlr1" class="pt-en">🌐</button>
         <button class="menu">☰</button>
       </nav>
+      
       <div class="vazio-b"></div>
-      <button class="pt-en">🌐 </button>
     </header>
     <!--Como o cabeçalho é absoluto, eu criei um espaço vazio pra poder ajeitar as outras seções-->
     <div class="espaco-header"></div>
@@ -214,28 +214,30 @@
         </p>
         <!--links para contato. O href do email e zap já entra no do da pessoa, pronto pra mandar msg-->
         <div class="contato-info">
-          <p >
+          <p>
             <a href="mailto:lucasshow37@gmail.com">
               <img src="./src/image/gmailLogo.png" alt="Email" />
               <span data-i18n="contatoEmail">Me mande um email</span></a
             >
           </p>
-          <p >
+          <p>
             <a href="https://wa.me/5575992029532" target="_blank">
               <img src="./src/image/zapLogo.png" alt="zap" />
               <span data-i18n="contatoZap">Fale comigo no zap</span></a
             >
           </p>
-          <p >
+          <p>
             <a href="https://example.com" target="_blank">
               <img src="./src/image/linkedinLogo.png" alt="linkedin" />
               <span data-i18n="contatoLinkedin">Visite meu Linkedin</span></a
             >
           </p>
-          <p >
+          <p>
             <a href="https://example.com" target="_blank">
               <img src="./src/image/githubLogo.png" alt="linkedin" />
-              <span data-i18n="contatoGithub">Veja meus projetos no github</span></a
+              <span data-i18n="contatoGithub"
+                >Veja meus projetos no github</span
+              ></a
             >
           </p>
         </div>
