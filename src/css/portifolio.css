@@ -7,7 +7,7 @@
 }
 
 .portifolio-flex h2 {
-  color: white;
+  color: var(--corOnOff);
   font-size: var(--tamanhoTituloH2);
   font-family: var(--fonteTitulo);
   margin-left: auto;
@@ -24,6 +24,9 @@
 }
 
 .portifolio-conteudo p {
+  background-color: var(--corBox);
+  padding: 15px;
+  border-radius: 5px;
   font-size: var(--tamanhoP);
   font-family: var(--fonteP);
   color: var(--corGold);
@@ -97,11 +100,12 @@
 }
 
 .paginacao > * {
+  color: var(--corPag);
   cursor: pointer;
   font-family: monospace;
   font-size: 1.1rem;
   font-weight: bold;
-  background-color: white;
+  background-color: var(--corOnOff);
   padding: 0.4rem;
   border-radius: 5px;
 }

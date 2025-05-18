@@ -36,13 +36,13 @@
   81% {
     transform: translateY(0);
     opacity: 1;
-    color: white;
+    color: var(--corOnOff);
     -webkit-text-stroke: 0;
   }
   100% {
     transform: translateY(0);
     opacity: 1;
-    color: white;
+    color: var(--corOnOff);
     -webkit-text-stroke: 0;
   }
 }

@@ -1,8 +1,5 @@
 :root {
-  --corGold: rgb(255, 224, 49);
-  --corBgHead: #000;
-  --corBgBody: #1f1f1f;
-  --corBgBtn: rgb(23, 26, 26);
+  
   --tamanhoTituloH2: clamp(30px, 2.8vw, 48px);
   --tamanhoP: clamp(24px, 2vw, 42px);
   --fonteTitulo: "Special Gothic Expanded One", sans-serif;
@@ -12,14 +9,36 @@
   --minHeightPadrao: 90vh;
 }
 
-/* usar clamp nos valores de fonte */
+.dark {
+  --corBgCh: rgb(38, 41, 41);
+  --corBox: #1f1f1f;
+  --corPag: #000;
+  --corOnOff: #fff;
+  --corGold: rgb(255, 224, 49);
+  --corBgHead: #000;
+  --corBgBody: #1f1f1f;
+  --corBgBtn: rgb(23, 26, 26);
+}
+
+.light {
+  --corBgCh: rgb(159, 160, 160);
+  --corBox: #d4d4d4;
+  --corPag: #fff;
+  --corOnOff: #000;
+  --corGold: rgb(0, 0, 0);
+  --corBgHead: #797979;
+  --corBgBody: #b8b8b8;
+  --corBgBtn: #ddd;
+}
 
 html {
   font-size: 16px;
   scroll-behavior: smooth;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 

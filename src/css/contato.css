@@ -12,16 +12,19 @@
 .contato-flex > h2 {
   font-family: var(--fonteTitulo);
   font-size: var(--tamanhoTituloH2);
-  color: white;
+  color: var(--corGold);
   margin-bottom: var(--distTitulo-Body);
 }
 
 .contato-flex > p {
+  background-color: var(--corBox);
+  border-radius: 5px;
   display: flex;
   font-family: var(--fonteP);
   font-size: var(--tamanhoP);
   color: var(--corGold);
   padding: clamp(40px, 5vh, 60px) clamp(5px, 1vw, 10px);
+  margin-bottom: 25px;
 }
 
 .contato-info {
@@ -31,6 +34,7 @@
 }
 
 .contato-info p {
+  
   font-size: clamp(18px, 1.6vw, 30px);
   font-family: var(--fonteP);
   margin-bottom: clamp(20px, 5vh, 40px); 
@@ -40,7 +44,7 @@
 .contato-info p,
 .contato-info a {
   text-decoration: none;
-  color: white;
+  color: var(--corGold);
 }
 
 .contato-info a {

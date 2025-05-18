@@ -35,6 +35,9 @@
 }
 
 .apresentacao p {
+  background-color: var(--corBox);
+  padding: 15px;
+  border-radius: 5px;
   margin-top: clamp(60px, 10.5vh, 140px);
   color: var(--corGold);
   font-family: var(--fonteP);

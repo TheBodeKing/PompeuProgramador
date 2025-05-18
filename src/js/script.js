@@ -1,4 +1,3 @@
-
 /*aqui eu defino as variáveis*/
 /*eu uso const e escolho um nome q eu vá tanto lembrar quanto enteder o q significa para a variavel, 
 ent eu puxo a classe do html q a variavel vai segurar. document vai puxar no documento atual, como eu carreguei 
@@ -11,7 +10,9 @@ const paginas = document.querySelectorAll(".paginacao .pagina");
 const btnAnte = document.querySelector(".anterior");
 const btnProx = document.querySelector(".proximo");
 
-const btnTlr = document.querySelector(".pt-en"); 
+const body = document.body;
+const btnLuz = document.querySelector(".luz");
+const btnTlr = document.querySelector(".pt-en");
 const navLinks = document.querySelectorAll(".navbar ul li a");
 /*aqui é pro carrosel, pra definir qual o index atual do carrosel, como o nome obviamente se explica*/
 let indexAtual = 0;
@@ -20,14 +21,35 @@ itens[indexAtual].classList.add("ativo");
 descricao[indexAtual].classList.add("ativo");
 paginas[indexAtual].classList.add("ativo");
 
-menuBtn.addEventListener("click", () => { 
+menuBtn.addEventListener("click", () => {
   navList.classList.toggle("show");
   btnTlr.classList.toggle("show");
+  btnLuz.classList.toggle("show");
 });
 
-navLinks.forEach(link => {
+
+const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+if (prefersDarkScheme) {
+  document.body.classList.add("dark");
+  console.log("tá escuro");
+} else {
+  document.body.classList.add("light");
+  console.log("tá claro");
+}
+
+btnLuz.addEventListener("click", () => {
+  body.classList.toggle("light");
+  body.classList.toggle("dark");
+});
+
+
+
+navLinks.forEach((link) => {
   link.addEventListener("click", () => {
     navList.classList.remove("show");
+    btnTlr.classList.remove("show");
+     btnLuz.classList.remove("show");
   });
 });
 
@@ -40,7 +62,6 @@ paginas.forEach((pagina) => {
     descricao.forEach((desc) => desc.classList.remove("ativo"));
     paginas.forEach((p) => p.classList.remove("ativo"));
     itens[index].classList.add("ativo");
-    
 
     paginas.forEach((p) => p.classList.remove("ativo"));
     pagina.classList.add("ativo");
@@ -59,7 +80,7 @@ btnAnte.addEventListener("click", () => {
 
   paginas.forEach((p) => p.classList.remove("ativo"));
   paginas[indexAtual].classList.add("ativo");
-   descricao[indexAtual].classList.add("ativo");
+  descricao[indexAtual].classList.add("ativo");
 });
 
 btnProx.addEventListener("click", () => {

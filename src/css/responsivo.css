@@ -13,10 +13,21 @@
     align-self: center;
   }
 
+  .luz{
+    display: none;
+    padding: 5px;
+  }
+
+  .luz.show {
+    display: flex;
+    position: absolute;
+    right: 150px;
+    top: 28px;
+  }
+
   .pt-en {
     display: none;
     padding: 5px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
   }
 
   .pt-en.show {
