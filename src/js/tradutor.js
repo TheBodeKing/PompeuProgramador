@@ -7,7 +7,7 @@ const traducoes = {
     homeDescricao:
       "Full stack web developer focused on fast, responsive, and stylish websites.",
     portifolioTitulo: "Check out my previous work",
-    portifolioDescricao1: "Item 1. Lorem",
+    portifolioDescricao1: "Item 1. Adriano vsfd nmrl gay do krl",
     portifolioDescricao2: "Item 12. Lorem",
     portifolioDescricao3: "Item 13. Lorem",
     sobreTitulo: "About... about me and the world",
@@ -75,18 +75,14 @@ let userLang = navigator.language || navigator.userLanguage;
 
 userLang = userLang.startsWith("pt") ? "pt" : "en";
 
-
 tradutor(userLang);
 currentLang = userLang;
 const toggleBtn = document.querySelector(".pt-en");
 
 toggleBtn.textContent = currentLang === "en" ? "🌐 PT" : "🌐 EN";
 
-
-
 document.querySelector(".pt-en").addEventListener("click", () => {
   currentLang = currentLang === "en" ? "pt" : "en";
   tradutor(currentLang);
   toggleBtn.textContent = currentLang === "en" ? "🌐 PT" : "🌐 EN";
 });
-

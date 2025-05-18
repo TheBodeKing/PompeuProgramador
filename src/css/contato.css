@@ -12,7 +12,7 @@
 .contato-flex > h2 {
   font-family: var(--fonteTitulo);
   font-size: var(--tamanhoTituloH2);
-  color: var(--corGold);
+  color: var(--corOnOff);
   margin-bottom: var(--distTitulo-Body);
 }
 

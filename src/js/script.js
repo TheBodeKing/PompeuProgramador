@@ -27,8 +27,9 @@ menuBtn.addEventListener("click", () => {
   btnLuz.classList.toggle("show");
 });
 
-
-const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)").matches;
+const prefersDarkScheme = window.matchMedia(
+  "(prefers-color-scheme: dark)"
+).matches;
 
 if (prefersDarkScheme) {
   document.body.classList.add("dark");
@@ -43,13 +44,11 @@ btnLuz.addEventListener("click", () => {
   body.classList.toggle("dark");
 });
 
-
-
 navLinks.forEach((link) => {
   link.addEventListener("click", () => {
     navList.classList.remove("show");
     btnTlr.classList.remove("show");
-     btnLuz.classList.remove("show");
+    btnLuz.classList.remove("show");
   });
 });
 
