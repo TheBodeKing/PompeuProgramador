@@ -39,16 +39,19 @@
   border-radius: 8px;
   margin-right: clamp(12px, 2vw, 25px);
   background-color: var(--corBgBtn);
-  padding: 15px;
+  overflow: hidden;
   transition: background-color 0.3s ease, transform 0.3s ease;
+  padding: 0;
 }
 
 .navbar ul li a {
+  cursor: pointer;
+  display: block;
+  padding: 15px;
   font-size: 1rem;
   font-family: var(--fonteTitulo);
   color: var(--corGold);
   text-decoration: none;
-  cursor: pointer;
 }
 
 .navbar ul li:hover {
@@ -56,7 +59,7 @@
   background-color: rgb(38, 41, 41);
 }
 
-.navbar .menu {
+.menu {
   display: none;
   align-self: center;
   font-size: 1.1rem;
@@ -65,13 +68,12 @@
   height: fit-content;
 }
 
-
-
-
 .pt-en {
-  display: none;
+  display: flex;
+  position: absolute;
+  right: 25px;
   align-self: center;
-  font-size: 1.1rem;
+  font-size: 0.9rem;
   cursor: pointer;
   max-width: fit-content;
   height: fit-content;
@@ -82,23 +84,6 @@
   font-family: var(--fonteTitulo);
   color: var(--corGold);
   transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-@media (min-width: 769px) {
-  .navbar {
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-  }
-
-  .pt-en {
-    display: inline-block;
-    margin-left: auto;
-  }
-
-  .menu {
-    display: none;
-  }
 }
 
 .pt-en:hover {

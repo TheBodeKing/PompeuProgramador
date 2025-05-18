@@ -11,6 +11,7 @@ const paginas = document.querySelectorAll(".paginacao .pagina");
 const btnAnte = document.querySelector(".anterior");
 const btnProx = document.querySelector(".proximo");
 
+const btnTlr = document.querySelector(".pt-en"); 
 const navLinks = document.querySelectorAll(".navbar ul li a");
 /*aqui é pro carrosel, pra definir qual o index atual do carrosel, como o nome obviamente se explica*/
 let indexAtual = 0;
@@ -21,6 +22,7 @@ paginas[indexAtual].classList.add("ativo");
 
 menuBtn.addEventListener("click", () => { 
   navList.classList.toggle("show");
+  btnTlr.classList.toggle("show");
 });
 
 navLinks.forEach(link => {
