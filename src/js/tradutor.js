@@ -7,7 +7,7 @@ const traducoes = {
     homeDescricao:
       "Full stack web developer focused on fast, responsive, and stylish websites.",
     portifolioTitulo: "Check out my previous work",
-    portifolioDescricao1: "Item 1. Adriano vsfd nmrl gay do krl",
+    portifolioDescricao1: "Item 1",
     portifolioDescricao2: "Item 12. Lorem",
     portifolioDescricao3: "Item 13. Lorem",
     sobreTitulo: "About... about me and the world",
@@ -37,7 +37,7 @@ const traducoes = {
     homeDescricao:
       "Desenvolvedor web full stack, focado em fazer sites rápidos, responsivos e sem nunca faltar estilo.",
     portifolioTitulo: "Confira aqui meus trabalhos anteriores",
-    portifolioDescricao1: "Item 1. Lorem",
+    portifolioDescricao1: "Séries de tutoriais onde explico como fiz esse site, desde o planejamento até o momento de colocar o site no ar",
     portifolioDescricao2: "Item 12. Lorem",
     portifolioDescricao3: "Item 13. Lorem",
     sobreTitulo: "Sobre... sobre mim e o mundo",
