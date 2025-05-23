@@ -27,6 +27,7 @@ menuBtn.addEventListener("click", () => {
   btnLuz.classList.toggle("show");
 });
 
+/*
 const prefersDarkScheme = window.matchMedia(
   "(prefers-color-scheme: dark)"
 ).matches;
@@ -37,7 +38,9 @@ if (prefersDarkScheme) {
 } else {
   document.body.classList.add("light");
   console.log("tá claro");
-}
+}*/
+
+body.classList.toggle("dark");
 
 btnLuz.addEventListener("click", () => {
   body.classList.toggle("light");
